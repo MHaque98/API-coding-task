@@ -1,0 +1,188 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e4eaec;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f8f9fa;
+  }
+}
+
+/* NAVBAR */
+.main-nav {
+  background-color: #171f2b;
+}
+
+.main-nav .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.main-nav button {
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border: 2px #14bcff solid;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.main-nav .btn1 {
+  background-color: #14bcff;
+  color: whitesmoke;
+}
+
+.main-nav .btn2 {
+  background-color: transparent;
+  color: #14bcff;
+}
+
+/* Header */
+.header {
+  background: url(https://images.pexels.com/photos/63508/pexels-photo-63508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+}
+
+.header button {
+  margin-top: 9px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  background-color: #14bcff;
+  color: whitesmoke;
+  border: 2px #14bcff solid;
+  border-radius: 1px;
+  font-weight: 500;
+}
+
+.header p {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background-position: left;
+  }
+}
+
+/*2nd NAV*/
+.second-nav .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-nav li {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding: 0.4em 1em;
+}
+
+.second-nav .active {
+  border-bottom: 2px #14bcff solid;
+  border-radius: 0px;
+}
+
+/*Main SECTION */
+.course-section .courses {
+  display: none;
+}
+
+.course-section .spinner-grow {
+  position: relative;
+  left: 50%;
+}
+
+.course-section .row .courses,
+.course-section .row .navs {
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.course-section .row .navs .nav-link {
+  border-bottom: 1px #e4eaec solid;
+}
+
+.course-section .row .navs .spec {
+  color: #14bcff;
+  border-top: 1px #14bcff solid;
+  border-bottom: none;
+}
+
+.course-section .label {
+  position: absolute;
+  bottom: 35px;
+  left: 4px;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 0.8rem;
+  background-color: #004585;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.course-section .label.tax {
+  background-color: #ffa600;
+}
+
+.course-section .label.communication {
+  background-color: #ff00b3;
+}
+
+.course-section .label.technology {
+  background-color: #64a01f;
+}
+
+@media only screen and (max-width: 768px) {
+  .course-section .label {
+    bottom: 350px;
+    font-size: 1rem;
+  }
+}
+
+.course-section button {
+  display: block;
+  padding: 5px 15px;
+  color: #14bcff;
+  background-color: transparent;
+  font-size: 0.9rem;
+  border: 2px #14bcff solid;
+  border-radius: 5px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.course-section button:hover {
+  background-color: #14bcff;
+  color: whitesmoke;
+}
+
+/*FOOTER*/
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 0.9rem;
+  background-color: #171f2b;
+  color: whitesmoke;
+  padding: 1em;
+  display: block;
+}
+
+label {
+  margin: auto 1em;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */

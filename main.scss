@@ -1,0 +1,172 @@
+$primary: #171f2b;
+$secondary: #14bcff;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4eaec;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f8f9fa;
+  }
+}
+
+/* NAVBAR */
+.main-nav {
+  background-color: $primary;
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  button {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    border: 2px $secondary solid;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .btn1 {
+    background-color: $secondary;
+    color: whitesmoke;
+  }
+  .btn2 {
+    background-color: transparent;
+    color: $secondary;
+  }
+}
+
+/* Header */
+.header {
+  background: url(https://images.pexels.com/photos/63508/pexels-photo-63508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  button {
+    margin-top: 9px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: $secondary;
+    color: whitesmoke;
+    border: 2px $secondary solid;
+    border-radius: 1px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    background-position: left;
+  }
+}
+/*2nd NAV*/
+.second-nav {
+  .nav {
+    justify-content: center;
+  }
+  li {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 0.4em 1em;
+  }
+  .active {
+    border-bottom: 2px $secondary solid;
+    border-radius: 0px;
+  }
+}
+
+/*Main SECTION */
+.course-section {
+  .courses {
+    display: none;
+  }
+  .spinner-grow {
+    position: relative;
+    left: 50%;
+  }
+  .row {
+    .courses,
+    .navs {
+      border-radius: 2px;
+      font-weight: 500;
+    }
+    .navs {
+      .nav-link {
+        border-bottom: 1px #e4eaec solid;
+      }
+
+      .spec {
+        color: $secondary;
+        border-top: 1px $secondary solid;
+        border-bottom: none;
+      }
+    }
+  }
+  .label {
+    position: absolute;
+    bottom: 35px;
+    left: 4px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 0.8rem;
+    background-color: rgb(0, 69, 133);
+    padding: 3px 8px;
+    text-transform: uppercase;
+    &.tax {
+      background-color: rgb(255, 166, 0);
+    }
+    &.communication {
+      background-color: rgb(255, 0, 179);
+    }
+    &.technology {
+      background-color: rgb(100, 160, 31);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .label {
+      bottom: 350px;
+      font-size: 1rem;
+    }
+  }
+  button {
+    display: block;
+    padding: 5px 15px;
+    color: $secondary;
+    background-color: transparent;
+    font-size: 0.9rem;
+    border: 2px $secondary solid;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $secondary;
+      color: whitesmoke;
+    }
+  }
+}
+
+/*FOOTER*/
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 0.9rem;
+  background-color: $primary;
+  color: whitesmoke;
+  padding: 1em;
+  display: block;
+}
+label {
+  margin: auto 1em;
+  font-weight: bold;
+  font-size: 0.9rem;
+}

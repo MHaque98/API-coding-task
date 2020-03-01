@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Test</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar main-nav navbar-expand-md navbar-dark">
+      <a class="navbar-brand font-weight-bold" href="#">logoipsum.</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button type="button" class="btn1 mr-sm-2">
+              Sign up
+            </button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn2 my-2 my-sm-0">
+              Log in
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header container-fluid">
+      <div class="container header-text text-light">
+        <div class="row  pt-5 pb-5">
+          <div class="col-lg-8">
+            <h1>Vestibulum pulvinar nisi orci vel</h1>
+            <p>
+              Nam velit libero, ornare ac neque vitae, elementum lobortis justo.
+              Vestibulum non finibus dolor
+            </p>
+            <button>Call to action</button>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light second-nav filtering row">
+      <ul class="container nav justify-content-md-start">
+        <li class="active btn nav-link " id="all">Show All</li>
+        <li class="btn nav-link" id="tax">Tax</li>
+        <li class="btn nav-link" id="communication">Communication</li>
+        <li class="btn nav-link" id="technology">Technology</li>
+        <label for="sort">Sort By : </label>
+        <!-- <label class="checkbox-inline">
+          <input type="checkbox" value="" />Option 1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="" />Option 2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="" />Option 3
+        </label> -->
+        <select name="sort" id="sort">
+          <option value="none">---</option>
+          <option value="A-Z">A-Z</option>
+          <option value="price">Price</option>
+        </select>
+      </ul>
+
+      <!-- <button id="test" class="tax">Try it</button>
+      <button id="test1" class="technology">tech</button> -->
+    </div>
+
+    <main>
+      <div class="container mt-4 course-section ">
+        <div class="row">
+          <div class="col-md-9 bg-light">
+            <div id="courses-all" class="">
+              <!-- Data From API Here -->
+              <div class="spinner-grow"></div>
+            </div>
+
+            <button class="mb-3 mt-2 mx-auto" id="loadMore">Load more</button>
+          </div>
+          <div class="col-md-3">
+            <div class="navs bg-light">
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link">Navigation Link</div>
+              <div class="nav-link spec">Special Link</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row text-center">
+        <div class="col-sm-6 text-sm-left pt-4">Produced by <a href="https://mhaque98.github.io/" target="_blank">Mahmud</a> </div>
+        <div class="col-sm-6 text-sm-right pt-4">
+          Terms | FAQs | Privacy Policy
+        </div>
+      </div>
+    </footer>
+    <script></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
