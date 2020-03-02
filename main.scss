@@ -41,6 +41,12 @@ body {
     color: $secondary;
   }
 }
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    margin: auto;
+    padding-left: 45px;
+  }
+}
 
 /* Header */
 .header {

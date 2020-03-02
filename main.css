@@ -45,6 +45,13 @@ body {
   color: #14bcff;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    margin: auto;
+    padding-left: 45px;
+  }
+}
+
 /* Header */
 .header {
   background: url(https://images.pexels.com/photos/63508/pexels-photo-63508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
