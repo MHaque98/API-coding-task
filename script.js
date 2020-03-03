@@ -8,35 +8,7 @@ $(document).ready(function() {
     .then(response => response.json())
     .then(data => {
       courses = data;
-      courses.forEach(course => {
-        coursesAll.insertAdjacentHTML(
-          "beforeend",
-          `
-            <div  class="filterDiv courses f-cat p-3 ${course.type}">
-              <div class="container course ">
-                <div class="row">
-                  <div class="col-lg-3 d-flex align-items-center p-1">
-                    <img
-                      src='${course.imageSrc}'
-                      alt="${course.altText}"
-                      class="img-fluid d-block "
-                    />
-                    <div class = "label ${course.type}">${course.type}</div>
-                  </div>
-                  <div class="col-lg-9">
-                    <h4>${course.title}</h4>
-                    <p>
-                      ${course.description}
-                    </p>
-                    <p class="price"><b>Price:</b> £${course.price}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `
-        );
-      });
-      show10();
+      showAll();
       $(".spinner-grow").hide();
     });
 
